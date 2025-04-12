@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: afs-pvc
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: azurefiles-sc
+  resources:
+    requests:
+      storage: 1Gi
